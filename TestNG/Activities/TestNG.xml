@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite name="MyFirstSuite" parallel="tests">-->
+<!--    <test thread-count="2" name="Test">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="ButtonTests"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="Examples.GroupingDemo"/>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+<!--    <test thread-count="4" name="secondTest" parallel="classes">-->
+<!--        <classes>-->
+<!--            <class name="Examples.PriorityDemo">-->
+<!--                <methods>-->
+<!--                    <include name="Two"/>-->
+<!--                    <include name="Four"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="Activities.Activity1"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite> &lt;!&ndash; Suite &ndash;&gt;-->
+<suite name="ExampleSuite" >
+    <test name="SuiteTests" >
+        <classes>
+            <class name="suiteExample.DemoOne"/>
+            <class name="suiteExample.DemoTwo"/>
+        </classes>
+    </test>
+</suite>
