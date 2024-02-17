@@ -1,5 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Activity5" >
+    <test name="ExcludeHeaderTestsGroups" >
+        <groups>
+            <run>
+                <exclude name="HeaderTests"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Activities.Activity5"/>
+        </classes>
+    </test>
+</suite>
+
+<!--<suite name="Activity5" >-->
+<!--    <test name="ButtonTestsGroups" >-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="ButtonTests"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="Activities.Activity5"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+<!--<suite name="Activity5" >-->
+<!--    <test name="HeaderTestsGroups" >-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="HeaderTests"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="Activities.Activity5"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+<!--<suite name="Activity5" >-->
+<!--    <test name="AllActivities" >-->
+<!--        <classes>-->
+<!--            <class name="Activities.Activity5"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+<!--<suite name="Activity4" >-->
+<!--    <test name="SuiteTests" >-->
+<!--        <classes>-->
+<!--            <class name="suiteExample.DemoOne"/>-->
+<!--            <class name="suiteExample.DemoTwo"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+
 <!--<suite name="MyFirstSuite" parallel="tests">-->
 <!--    <test thread-count="2" name="Test">-->
 <!--        <groups>-->
@@ -23,11 +81,4 @@
 <!--        </classes>-->
 <!--    </test>-->
 <!--</suite> &lt;!&ndash; Suite &ndash;&gt;-->
-<suite name="ExampleSuite" >
-    <test name="SuiteTests" >
-        <classes>
-            <class name="suiteExample.DemoOne"/>
-            <class name="suiteExample.DemoTwo"/>
-        </classes>
-    </test>
-</suite>
+
