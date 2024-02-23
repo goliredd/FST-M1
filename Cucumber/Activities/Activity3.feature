@@ -20,7 +20,7 @@ Feature: Testing with Tags
     And Close Browser
 
   @PromptAlert
-  Scenario Outline: Testing with Prompt Alert
+  Scenario: Testing with Prompt Alert
   Given User is on the page
   When User clicks the Prompt Alert button
   Then Alert opens
