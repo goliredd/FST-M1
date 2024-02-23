@@ -7,7 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
         features = "src/test/java/Features",
         glue = {"StepDefinitions"},
-        tags = "@activity3"
+        tags = "@SmokeTest",
+        plugin = {"html: test-reports"},
+        monochrome = true
 )
 public class testrunner {
 }

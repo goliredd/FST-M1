@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -31,12 +32,19 @@ public class LoginTestSteps {
         driver.findElement(By.id("password")).sendKeys("password");
         driver.findElement(By.cssSelector("button.button:nth-child(4)")).click();
     }
+    @When("^User enters \"(.*)\" and \"(.*)\"$")
+    public void userEntersAdminAndPassword(String username, String password) throws Throwable{
+        driver.findElement(By.id("username")).sendKeys(username);
+        driver.findElement(By.id("password")).sendKeys(password);
+        driver.findElement(By.cssSelector("button.button:nth-child(4)")).click();
+    }
     @Then("^Read the page title and confirmation message$")
     public void readThePageTitleAndConfirmationMessage(){
         String pageTitle = driver.getTitle();
         String loginMessage = driver.findElement(By.id("action-confirmation")).getText();
         System.out.println("Title of the page: " +pageTitle);
         System.out.println("Login message: " +loginMessage);
+
     }
     @And("^Close the Browser$")
     public void closeTheBrowser() {
