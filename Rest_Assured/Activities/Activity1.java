@@ -16,7 +16,6 @@ public class Activity1 {
         Response response =
                 given().contentType(ContentType.JSON) // Set headers
                         .body(reqBody).when().post(ROOT_URI); // Send POST request
-        String body = response.getBody().asPrettyString();
         // Assertions for id, name, and status items
         response.then().body("id", equalTo(77202));
         response.then().body("name", equalTo("Riley"));
