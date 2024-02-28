@@ -46,7 +46,7 @@ public class Activity5 {
         driver.findElement(AppiumBy.accessibilityId("Start new conversation")).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement textView = wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("recipient_text_view")));
-        textView.sendKeys("9972155393");
+        textView.sendKeys("999148292");
         driver.pressKey(new KeyEvent().withKey(AndroidKey.ENTER));
         WebElement textEditor = wait.until(ExpectedConditions.elementToBeClickable(AppiumBy.id("compose_message_text")));
         textEditor.sendKeys("Hello from Appium");
