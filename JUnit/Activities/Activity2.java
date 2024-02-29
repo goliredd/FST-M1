@@ -17,7 +17,6 @@ public class Activity2 {
     void enoughFunds(){
         // Create an object for BankAccount class
         BankAccount account = new BankAccount(100);
-
         // Assertion for no exceptions
         assertDoesNotThrow(() -> account.withdraw(100));
     }
