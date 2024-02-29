@@ -11,5 +11,4 @@ import io.cucumber.junit.CucumberOptions;
         plugin = {"html: test-reports"},
         monochrome = true
 )
-public class testrunner {
-}
+public class testrunner {}
